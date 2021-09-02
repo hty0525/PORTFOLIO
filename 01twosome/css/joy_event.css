@@ -1,0 +1,103 @@
+header#page_background {
+  background: url(../img/joy/event_background.jpg) no-repeat center center;
+  background-size: cover;
+}
+header#page_background::after {
+  content: "EVENT";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.05em;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+header#page_background > nav.joy_nav > ul > li > a[href="joy_event.html"] {
+  font-weight: bold;
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+section.joy_event {
+  width: 100%;
+  overflow: hidden;
+  margin: 3% 0;
+}
+section.joy_event > article.event_main {
+  width: 70%;
+  margin: 3% auto;
+}
+section.joy_event > article.event_main > p {
+  width: 85%;
+  margin: 3% auto;
+  font-size: 3em;
+  color: #777;
+}
+section.joy_event > article.event_main > p > span {
+  color: #000;
+  font-weight: bold;
+}
+section.joy_event > article.event_main > ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+article.event_main > ul > li {
+  width: 27.333%;
+  margin: 3%;
+  float: left;
+}
+article.event_main > ul > li > a {
+  width: 100%;
+  display: block;
+}
+article.event_main > ul > li > a > img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+section.joy_event > article.event_list {
+  width: 60%;
+  margin: 2% auto;
+  overflow: hidden;
+  border-top: 2px solid #666;
+  border-bottom: 2px solid #666;
+  padding: 1% 0;
+}
+
+article.event_list > div {
+  width: 100%;
+  overflow: hidden;
+}
+article.event_list > div > a {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-right: 2.5%;
+}
+article.event_list > div > a > img {
+  width: 100%;
+}
+
+article.event_list > div > div {
+  width: 45%;
+  float: left;
+  margin-left: 2.5%;
+  font-size: 1.1em;
+}
+
+article.event_list > div > div > a {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: black;
+  line-height: 2.5em;
+}
+article.event_list > div > div > p {
+  font-size: 1em;
+  color: #666;
+}
+article.event_list > div > div > p > span {
+  visibility: hidden;
+}

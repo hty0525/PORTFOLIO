@@ -1,0 +1,419 @@
+header#page_background {
+  background: url(../img/franchise/franchise_background.jpg) no-repeat 0 75%;
+  background-size: cover;
+}
+header#page_background::after {
+  content: "FRANCHISE";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.05em;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+header#page_background > nav.franchise_nav {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+header#page_background > nav.franchise_nav > ul {
+  width: 25%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header#page_background > nav.franchise_nav > ul > li {
+  float: left;
+  width: 50%;
+}
+header#page_background
+  > nav.franchise_nav
+  > ul
+  > li
+  > a[href="franchise.html"] {
+  border-bottom: 3px solid black;
+  color: black;
+  font-weight: bold;
+}
+
+section.franchise_all {
+  width: 100%;
+}
+section.franchise_all > h1 {
+  width: 15%;
+  margin-left: 15%;
+}
+section.franchise_all > h1::after {
+  content: "";
+  width: 30%;
+  margin-bottom: 5%;
+  display: block;
+  height: 3px;
+  background: #666;
+}
+section.franchise_all > h1 > img {
+  width: 100%;
+  margin: 0 auto;
+}
+section.franchise_all > article.franchise_box {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+section.franchise_all > article.franchise_box > div {
+  width: 100%;
+  margin: 0 auto;
+}
+section.franchise_all > article.franchise_box > div > p {
+  font-size: 1.5em;
+  text-align: center;
+  color: #555;
+}
+section.franchise_all > article.franchise_box > div > p:nth-child(1) {
+  font-size: 2.3em;
+  line-height: 3em;
+  color: #000;
+}
+
+section.franchise_all > article.franchise_box > ul.moo {
+  width: 70%;
+  overflow: hidden;
+  border-radius: 500px;
+  background: #333;
+  margin: 3% auto;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.franchise_all > article.franchise_box > ul.moo > li {
+  width: 10%;
+  float: left;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 2% 0;
+  color: #fafafa;
+}
+section.franchise_all > article.franchise_box > ul.moo > li > img {
+  width: 70%;
+  vertical-align: middle;
+}
+section.franchise_all > article.franchise_box > ul.moo > li:first-child {
+  margin-left: 11%;
+  margin-right: 3%;
+}
+section.franchise_all > article.franchise_box > ul.moo > li:last-child {
+  margin-right: 11%;
+  width: 20%;
+}
+section.franchise_all > article.franchise_box > ul.moo > li.plus {
+  width: 5%;
+}
+
+section.franchise_all > article.franchise_box > div.img_box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section.franchise_all > article.franchise_box > div.img_box > ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+section.franchise_all > article.franchise_box > div.img_box > ul > li {
+  width: 47.5%;
+  margin: 3% 1.25%;
+  float: left;
+}
+section.franchise_all > article.franchise_box > div.img_box > ul > li > img {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+section.franchise_all > article.franchise_box > div.img_box > ul > li > p {
+  font-size: 1.2em;
+  text-align: left;
+  color: #555;
+}
+section.franchise_all
+  > article.franchise_box
+  > div.img_box
+  > ul
+  > li
+  > p
+  > span {
+  display: block;
+  font-size: 1.2em;
+  color: #000;
+}
+
+section.franchise_all
+  > article.franchise_box
+  > div.img_box
+  > ul
+  > li
+  > p
+  > span::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #000;
+  margin: 3% 0;
+}
+
+section.franchise_all > article.franchise_text_box {
+  width: 70%;
+  margin: 3% auto;
+  margin-top: 8%;
+}
+section.franchise_all > article.franchise_text_box > div {
+  width: 100%;
+  margin: 6% auto;
+}
+section.franchise_all > article.franchise_text_box > div > p {
+  font-size: 1.5em;
+  text-align: center;
+}
+section.franchise_all > article.franchise_text_box > div > p:nth-child(1) {
+  font-size: 2.3em;
+  line-height: 3em;
+  color: #000;
+}
+
+section.franchise_all > article.franchise_text_box > ul {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 5% 0;
+}
+section.franchise_all > article.franchise_text_box > ul > li {
+  width: 21.25%;
+  float: left; /* border:1px solid black; border-radius:15px;*/
+  font-size: 1.3em;
+  margin-right: 5%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+  padding-top: 3.5%;
+}
+
+section.franchise_all > article.franchise_text_box > ul > li > p:first-child {
+  padding: 3% 0;
+  color: #222;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 3%;
+}
+section.franchise_all > article.franchise_text_box > ul > li > p:nth-child(3) {
+  padding: 7% 0;
+  background: ;
+  font-size: 1.2em;
+  color: #000;
+}
+section.franchise_all
+  > article.franchise_text_box
+  > ul
+  > li
+  > p:nth-child(2)
+  > img {
+  width: 18%;
+}
+section.franchise_all > article.franchise_text_box > ul > li:last-child {
+  margin-right: 0;
+}
+section.franchise_all > article.franchise_text_box > ul > li > p {
+  text-align: center;
+}
+section.franchise_all > article.franchise_text_box > ul > li > p:last-child {
+  font-size: 0.9em;
+  width: 100%;
+  color: #666;
+  text-align: center;
+  height: 100px;
+  padding: 0 2%;
+}
+
+section.franchise_all > article.franchise_text_box > ul > div {
+  position: absolute;
+  top: 50%;
+  width: 3%;
+}
+
+section.franchise_all
+  > article.franchise_text_box
+  > ul.top_step
+  > div:nth-child(1) {
+  left: 22.25%;
+}
+section.franchise_all
+  > article.franchise_text_box
+  > ul.top_step
+  > div:nth-child(2) {
+  left: 48.5%;
+}
+section.franchise_all
+  > article.franchise_text_box
+  > ul.top_step
+  > div:nth-child(3) {
+  left: 74.75%;
+}
+
+section.franchise_all > article.franchise_text_box > ul.top_step > div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  background: #000;
+  width: 70%;
+  height: 3px;
+  top: 50%;
+  transform: rotate(-45deg) translate(-50%, -100%);
+}
+
+section.franchise_all > article.franchise_text_box > ul.top_step > div::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  background: #000;
+  width: 70%;
+  height: 3px;
+  bottom: 50%;
+  transform: rotate(45deg) translate(-50%, 100%);
+}
+
+section.franchise_all
+  > article.franchise_text_box
+  > ul.bottom_step
+  > div:nth-child(1) {
+  right: 22.25%;
+}
+section.franchise_all
+  > article.franchise_text_box
+  > ul.bottom_step
+  > div:nth-child(2) {
+  right: 48.5%;
+}
+section.franchise_all
+  > article.franchise_text_box
+  > ul.bottom_step
+  > div:nth-child(3) {
+  right: 74.75%;
+}
+
+section.franchise_all
+  > article.franchise_text_box
+  > ul.bottom_step
+  > div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #000;
+  width: 70%;
+  height: 3px;
+  top: 50%;
+  transform: rotate(-135deg) translate(-50%, 100%);
+  right: 50%;
+}
+
+section.franchise_all
+  > article.franchise_text_box
+  > ul.bottom_step
+  > div::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #000;
+  width: 70%;
+  height: 3px;
+  bottom: 50%;
+  transform: rotate(135deg) translate(-50%, -100%);
+  right: 50%;
+}
+
+section.franchise_all > article.franchise_table {
+  width: 60%;
+  margin: 3% auto;
+  margin-top: 10%;
+}
+section.franchise_all > article.franchise_table > p {
+  font-size: 1.1em;
+  color: #666;
+}
+section.franchise_all > article.franchise_table > p.p1 {
+  padding-right: 2px;
+  text-align: right;
+}
+section.franchise_all > article.franchise_table > div {
+  width: 100%;
+  margin: 6% auto;
+}
+section.franchise_all > article.franchise_table > div > p {
+  font-size: 1.7em;
+  text-align: center;
+  color: #555;
+}
+section.franchise_all > article.franchise_table > div > p:nth-child(1) {
+  font-size: 2.5em;
+  line-height: 3em;
+  color: #000;
+}
+section.franchise_all > article.franchise_table > table {
+  width: 100%;
+  font-size: 1.4em;
+}
+section.franchise_all > article.franchise_table > table > tbody > tr > * {
+  padding: 2% 0;
+  background: rgba(0, 0, 0, 0.01);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+section.franchise_all
+  > article.franchise_table
+  > table
+  > tbody
+  > tr:first-child
+  > td {
+  background: #222;
+  color: #fafafa;
+  text-align: center;
+}
+section.franchise_all
+  > article.franchise_table
+  > table
+  > tbody
+  > tr:last-child
+  > td {
+  background: #222;
+  color: #fafafa;
+}
+section.franchise_all
+  > article.franchise_table
+  > table
+  > tbody
+  > tr
+  > *:first-child {
+  text-align: center;
+}
+section.franchise_all
+  > article.franchise_table
+  > table
+  > tbody
+  > tr
+  > *:nth-child(2) {
+  text-align: center;
+}
+section.franchise_all
+  > article.franchise_table
+  > table
+  > tbody
+  > tr
+  > *:nth-child(3) {
+  padding-left: 5%;
+}

@@ -1,0 +1,142 @@
+header#page_background {
+  background: url(../img/franchise/franchise_background.jpg) no-repeat 0 75%;
+  background-size: 100%;
+}
+header#page_background::after {
+  content: "FRANCHISE";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.05em;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+header#page_background > nav.franchise_nav {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+header#page_background > nav.franchise_nav > ul {
+  width: 25%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header#page_background > nav.franchise_nav > ul > li {
+  float: left;
+  width: 50%;
+}
+header#page_background
+  > nav.franchise_nav
+  > ul
+  > li
+  > a[href="franchise_faq.html"] {
+  border-bottom: 3px solid black;
+  color: black;
+  font-weight: bold;
+}
+
+section.franchise_faq {
+  width: 60%;
+  margin: 0 auto;
+}
+section.franchise_faq > h1 {
+  width: 100%;
+  text-align: left;
+  margin: 3% auto;
+  font-size: 1.8em;
+  position: relative;
+  margin: 7% auto;
+  margin-bottom: 10%;
+}
+section.franchise_faq > h1 > span {
+  background: white;
+  padding-right: 0;
+  padding-left: 1%;
+}
+section.franchise_faq > h1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: black;
+  width: 8%;
+  top: 130%;
+  left: 0;
+  z-index: -1;
+}
+
+section.franchise_faq > p {
+  width: 90%;
+  font-size: 2em;
+  margin: 3% auto;
+}
+
+section.franchise_faq > ul.franchise_faq_ul {
+  width: 90%;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+section.franchise_faq > ul.franchise_faq_ul > li {
+  width: 100%;
+  font-size: 1.3em;
+  border-bottom: 1px solid #666;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div > * {
+  padding: 2% 0;
+}
+section.franchise_faq > ul.franchise_faq_ul > li * > strong {
+  padding-right: 10px;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:first-child {
+  position: relative;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:first-child::after {
+  width: 15px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  background: #000;
+  transform: rotate(-45deg);
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:first-child::before {
+  width: 15px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  background: #000;
+  transform: rotate(45deg);
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div {
+  width: 100%;
+  padding-left: 3%;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div > a {
+  display: block;
+  width: 100%;
+  color: #000;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:last-child {
+  display: none;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:last-child > * {
+  color: #666;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:last-child > strong {
+  display: block;
+  float: left;
+}
+section.franchise_faq > ul.franchise_faq_ul > li > div:last-child > span {
+  display: block;
+  float: left;
+  width: 94%;
+}

@@ -1,0 +1,189 @@
+header#page_background {
+  background: url(../img/joy/member_background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+header#page_background > nav.joy_nav > ul > li > a[href="joy_member.html"] {
+  font-weight: bold;
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+section.member_cj {
+  width: 100%;
+  background: url(../img/joy/joy_member_background.jpg) no-repeat center bottom;
+}
+section.member_cj > article.member_text {
+  width: 100%;
+  padding: 3%;
+}
+section.member_cj > article.member_text > h1 {
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+}
+section.member_cj > article.member_text > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.3em;
+}
+section.member_cj > article.member_text > p {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 1.8em;
+  width: 100%;
+  line-height: 2em;
+}
+section.member_cj > article.member_text > i {
+  width: 20%;
+  margin: 3% auto;
+  display: block;
+  height: 1px;
+  background: #666;
+  opacity: 1;
+  display: none;
+}
+
+section.member_cj > article.member_text > div.member_text_box {
+  width: 45%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+section.member_cj > article.member_text > div.member_text_box > div {
+  float: left;
+  background: white;
+  padding: 5% 1%;
+}
+
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div:nth-child(1) {
+  width: 30%;
+  margin-right: 3%;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div:nth-child(2) {
+  width: 30%;
+  left: 28%;
+  top: 0;
+  margin-right: 3%;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div:nth-child(3) {
+  width: 30%;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div:nth-child(4) {
+  width: 27%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div:nth-child(5) {
+  width: 60%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+section.member_cj > article.member_text > div.member_text_box > div > p {
+  text-align: center;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div
+  > p:nth-child(1) {
+  font-size: 1.4em;
+  color: #222;
+  margin-bottom: 2%;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div
+  > p:nth-child(1)
+  > span {
+  display: block;
+  font-size: 1.3em;
+  color: #ee6900;
+}
+section.member_cj
+  > article.member_text
+  > div.member_text_box
+  > div
+  > p:nth-child(2) {
+  font-size: 1.3em;
+  color: #666;
+}
+
+section.member_cj > article.member_text > div.member_picture {
+  width: 1055px;
+  margin: 0 auto;
+  margin-top: 3%;
+  overflow: hidden;
+}
+section.member_cj > article.member_text > div.member_picture > p {
+  width: 100%;
+  font-size: 2em;
+  width: 100%;
+  line-height: 2em;
+  text-align: center;
+  margin-bottom: 3%;
+}
+section.member_cj > article.member_text > div.member_picture > div {
+  width: 270px;
+  padding: 180px 0 20px;
+  float: left;
+  background: url(../img/joy/joy_member_picture.png) no-repeat;
+}
+
+section.member_cj
+  > article.member_text
+  > div.member_picture
+  > div:nth-child(2) {
+  z-index: 5;
+}
+section.member_cj
+  > article.member_text
+  > div.member_picture
+  > div:nth-child(3) {
+  background-position: -300px 0;
+  margin-left: -10px;
+  margin-top: 20px;
+}
+section.member_cj
+  > article.member_text
+  > div.member_picture
+  > div:nth-child(4) {
+  background-position: -600px 0;
+  z-index: 2;
+  margin-left: -10px;
+  margin-top: -15px;
+}
+section.member_cj
+  > article.member_text
+  > div.member_picture
+  > div:nth-child(5) {
+  background-position: -930px 0;
+  margin-left: -10px;
+}
+
+section.member_cj > article.member_text > div.member_picture > div > p {
+  font-size: 1.3em;
+  line-height: 1.7em;
+  padding-top: 10px;
+  padding-left: 30px;
+  color: #666;
+}

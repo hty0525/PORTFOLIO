@@ -1,0 +1,483 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+ul li {
+  list-style: none;
+}
+
+section {
+  font-size: 1.2em;
+}
+
+#main1 {
+  background: url(main1.jpg) no-repeat center center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+#main1 img#logo {
+  width: 20%;
+  display: block;
+  top: 40%; /* transform:translateY(-50%);*/
+  left: 40%;
+  position: absolute;
+  transform: scale(1.8);
+  opacity: 0;
+  transition: all 1s;
+  opacity: 0;
+  filter: blur(10px);
+}
+#main1 p {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 4.5em;
+  color: #fff;
+}
+#main1 p span {
+  position: relative;
+  right: -70%;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+#main1.fp-completely p span {
+  right: 0;
+  opacity: 1;
+  transition: opacity 0.8s;
+  transition-delay: 1.5s;
+}
+#main1.fp-completely p span:nth-child(1) {
+  transition-delay: 1s;
+}
+#main1.fp-completely p span:nth-child(2) {
+  transition-delay: 1s;
+}
+#main1.fp-completely p span:nth-child(3) {
+  transition-delay: 1s;
+}
+#main1.fp-completely p span:nth-child(4) {
+  transition-delay: 1s;
+}
+#main1.fp-completely p span:nth-child(5) {
+  transition-delay: 1s;
+}
+#main1.fp-completely p span:nth-child(6) {
+  transition-delay: 1.5s;
+}
+#main1.fp-completely p span:nth-child(7) {
+  transition-delay: 1.5s;
+}
+#main1.fp-completely p span:nth-child(8) {
+  transition-delay: 1.5s;
+}
+#main1.fp-completely p span:nth-child(9) {
+  transition-delay: 1.5s;
+}
+
+#main1.fp-completely img#logo {
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  transition: 2s;
+}
+#main1 ul {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+#main1 ul > li {
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+}
+#main1 ul > li:nth-child(2) {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+#main1 ul > li:nth-child(2) > img {
+  position: absolute;
+  width: 80%;
+  top: 10px;
+  border-radius: 999px;
+  animation: scroll 2000ms linear infinite;
+  left: 10%;
+}
+#main1.fp-completely ul {
+  opacity: 1;
+  transition: all 2s 2s;
+}
+
+@keyframes scroll {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+  100% {
+    top: 35px;
+    opacity: 1;
+  }
+}
+
+#main2 {
+  background: url(main2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#main2 div.coffee {
+  position: absolute;
+  width: 30%;
+  font-size: 1.1em;
+  top: 25%;
+  left: 17%;
+  color: #fff;
+}
+#main2 div.coffee * {
+  position: relative;
+  opacity: 0;
+  left: -200px;
+  transition: all 1s;
+}
+#main2 div.coffee hr {
+  margin: 10px 0;
+}
+#main2 div.coffee > p:first-child {
+  font-weight: bold;
+}
+#main2 div.coffee > p:last-child {
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+#main2 img {
+  position: absolute;
+  width: 25%;
+  right: 23%;
+  top: 30%;
+  transition: all 1s linear;
+}
+#main2.fp-completely div.coffee > * {
+  opacity: 1;
+  left: 0;
+}
+#main2.fp-completely div.coffee > *:nth-child(1) {
+  transition-delay: 0;
+}
+#main2.fp-completely div.coffee > *:nth-child(2) {
+  transition-delay: 0;
+}
+#main2.fp-completely div.coffee > *:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+#main3 {
+  background: url(main3.jpg) no-repeat center center;
+  background-size: cover;
+}
+#main3 div.dessert {
+  position: absolute;
+  width: 31%;
+  font-size: 1.1em;
+  bottom: 30%;
+  right: 17%;
+  color: #fff;
+}
+#main3 div.dessert * {
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+}
+#main3 div.dessert hr {
+  margin: 10px 0;
+  width: 0;
+  bottom: 0;
+}
+#main3 div.dessert > p:first-child {
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+#main3 div.dessert > p:last-child {
+  font-size: 0.8em;
+  line-height: 1.7em;
+  transform: translateY(50%);
+}
+#main3.fp-completely div.dessert > * {
+  opacity: 1;
+}
+#main3.fp-completely div.dessert > *:nth-child(1) {
+  transition-delay: 1s;
+  transform: translateY(0%);
+}
+#main3.fp-completely div.dessert > *:nth-child(2) {
+  width: 100%;
+  transition-delay: 0s;
+}
+#main3.fp-completely div.dessert > *:nth-child(3) {
+  transition-delay: 1s;
+  transform: translateY(0%);
+}
+
+#main4 {
+  background: url(main4.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+#main4 div.background {
+  background: #000;
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  transition: background 1s;
+}
+#main4.active div.background {
+  width: 0;
+  background: transparent;
+  transition: width 2s ease-out, background 3s ease-in;
+}
+#main4 div.pa {
+  position: absolute;
+  width: 31%;
+  font-size: 1.1em;
+  top: 24%;
+  right: 10%;
+  color: #fff;
+}
+#main4 div.pa * {
+  position: relative;
+  opacity: 0;
+  margin-top: 0;
+  transition: all 1s;
+}
+#main4 div.pa hr {
+  margin: 10px 0;
+}
+#main4 div.pa > p:first-child {
+  font-weight: bold;
+}
+#main4 div.pa > p:last-child {
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+#main4.fp-completely div.pa > * {
+  opacity: 1;
+  margin-top: 0;
+  transition: all 6s;
+}
+#main4.fp-completely div.pa > *:nth-child(1) {
+  transition-delay: 0.1s;
+}
+#main4.fp-completely div.pa > *:nth-child(2) {
+  transition-delay: 0.6s;
+  margin-top: 10px;
+}
+#main4.fp-completely div.pa > *:nth-child(3) {
+  transition-delay: 0s;
+}
+
+#main5 {
+  background: url(main5.jpg) no-repeat center center;
+  background-size: cover;
+}
+#main5 div.fp-tableCell {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: black;
+  transition: all 4s;
+}
+#main5.active div.fp-tableCell {
+  background: transparent;
+  transition: all 5s;
+}
+#main5 div.left_box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+}
+#main5 div.left_box > span {
+  display: block;
+  position: absolute;
+  background: rgba(240, 240, 240, 1);
+  transition: all 0.4s;
+  width: 0;
+  height: 0;
+}
+
+#main5 div.left_box > p {
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+  color: rgba(255, 255, 255, 0.95);
+}
+#main5 div.left_box > p:nth-child(7) {
+  font-size: 3.1em;
+  left: 80px;
+  bottom: 35px;
+  width: ;
+  overflow: hidden;
+}
+#main5 div.right_box {
+  position: absolute;
+  top: 53%;
+  right: 15%;
+}
+#main5 div.right_box > p {
+  color: #666;
+  position: relative;
+}
+#main5 div.right_box > p {
+  font-size: 1.3em;
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.7);
+}
+#main5 div.right_box > p span {
+  font-size: 0.9em;
+  margin-right: 10px;
+  font-weight: 400;
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0;
+  position: relative;
+  right: -50px;
+}
+#main5 div.right_box > p strong {
+  color: #fff;
+  font-size: 1.8em;
+  transition: all 1s;
+  opacity: 0;
+  position: relative;
+  letter-spacing: 0.05em;
+  left: -50px;
+}
+
+#main5.fp-completely div.left_box {
+  left: 35%;
+  transition: all 2s 1.5s;
+}
+#main5.fp-completely div.left_box > span:nth-child(1) {
+  transition-delay: 0;
+  transition-property: width;
+}
+#main5.fp-completely div.left_box > span:nth-child(2) {
+  transition-delay: 0.3s;
+  transition-property: height;
+}
+#main5.fp-completely div.left_box > span:nth-child(3) {
+  transition-delay: 0.9s;
+  transition-property: height;
+}
+#main5.fp-completely div.left_box > span:nth-child(4) {
+  transition-delay: 1.1s;
+  transition-property: width;
+}
+#main5.fp-completely div.left_box > span:nth-child(5) {
+  transition-delay: 1.4s;
+  transition-property: height;
+}
+#main5.fp-completely div.left_box > span:nth-child(6) {
+  transition: height 1s 0.3s, background 1s 3s;
+  background: transparent;
+}
+#main5.fp-completely div.left_box > span:nth-child(1) {
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+}
+#main5.fp-completely div.left_box > span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 15%;
+}
+#main5.fp-completely div.left_box > span:nth-child(3) {
+  top: 90%;
+  right: 0;
+  width: 3px;
+  height: 10%;
+}
+#main5.fp-completely div.left_box > span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  width: 100%;
+}
+#main5.fp-completely div.left_box > span:nth-child(5) {
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+}
+#main5.fp-completely div.left_box > span:nth-child(6) {
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+}
+#main5.fp-completely div.left_box > p {
+  opacity: 1;
+  transition: all 2s;
+}
+#main5.fp-completely div.left_box > p:nth-child(7) {
+  transition-delay: 3.5s;
+  width: 410px;
+}
+
+#main5.fp-completely div.right_box > p:nth-child(1) strong {
+  transition-delay: 4s;
+  opacity: 1;
+  left: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(2) strong {
+  transition-delay: 4.4s;
+  opacity: 1;
+  left: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(3) strong {
+  transition-delay: 4.8s;
+  opacity: 1;
+  left: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(4) strong {
+  transition-delay: 5.2s;
+  opacity: 1;
+  left: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(1) span {
+  transition-delay: 4s;
+  opacity: 1;
+  right: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(2) span {
+  transition-delay: 4.4s;
+  opacity: 1;
+  right: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(3) span {
+  transition-delay: 4.8s;
+  opacity: 1;
+  right: 0;
+}
+#main5.fp-completely div.right_box > p:nth-child(4) span {
+  transition-delay: 5.2s;
+  opacity: 1;
+  right: 0;
+}
