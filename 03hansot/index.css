@@ -105,27 +105,40 @@ img {
 .sns_icon:last-child::before {
   background-position: -42px 0;
 }
+
+/*네비게이션*/
 .gnb {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5%;
   max-width: 1170px;
-  margin: 0 auto;
+  width: 100%;
   background: #fff;
+  margin: 0 auto;
+  height: 90px;
+  position: relative;
+}
+
+.logo {
+  float: left;
   display: flex;
   align-items: center;
-  height: 90px;
-  justify-content: space-between;
-  padding: 0 1.5%;
 }
 
 .logo h1::before {
   content: "";
   width: 109px;
   height: 46px;
-  display: inline-block;
-  background: url(images/h1_logo.png) left top no-repeat;
+  display: block;
+  background: url(images/h1_logo.png) center center no-repeat;
 }
 
 .gnb_menu {
-  height: 100%;
+  float: right;
+  height: 90px;
+  padding-right: 1%;
+  transition: height 0.4s;
+  overflow: hidden;
 }
 
 .gnb_menu_deep {
@@ -161,11 +174,11 @@ img {
   display: block;
 }
 
-.gnb_menu_tit:hover {
+.gnb_menu_deep:hover > .gnb_menu_tit {
   color: #f6ca00;
 }
 
-.gnb_menu_tit:hover::after {
+.gnb_menu_deep:hover > .gnb_menu_tit::after {
   width: 100%;
 }
 
@@ -173,5 +186,43 @@ img {
   position: absolute;
   left: 0;
   width: 100%;
-  border: 1px solid black;
+  margin-top: 20px;
+  top: 90px;
 }
+
+.gnb_menu_deep > ul > li > a {
+  padding: 9px 5px 9px 5px;
+  height: 36px;
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+  display: inline-block;
+  z-index: 991;
+}
+
+.gnb_menu_deep > ul > li:hover a {
+  text-decoration: underline;
+}
+
+.bg_layer {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 0;
+  background-color: #f6f5f5;
+  z-index: -99;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.gnb_menu:hover {
+  height: 400px;
+}
+
+.gnb_menu:hover + .bg_layer {
+  height: 340px;
+  opacity: 0.96;
+}
+
+/*네비 끝*/
