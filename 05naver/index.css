@@ -885,6 +885,38 @@ nav {
   margin-top: 23px;
 }
 
+.figure {
+  position: relative;
+  padding-left: 18px;
+}
+
+.figure:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 5px;
+  margin-top: -3px;
+}
+
+.figure.type5:before {
+  background: url(img/sprite.png) no-repeat;
+  -webkit-background-size: 474px 1500px;
+  background-size: 474px 1500px;
+  background-position: -287px -38px;
+}
+
+.summary_stock .stock_info_box .figure.type5:before {
+  background-position: -318px -38px;
+}
+
+.summary_stock .stock_info_box .figure.type2:before,
+.summary_stock .stock_info_box .figure.type5:before {
+  width: 10px;
+  height: 6px;
+}
+
 .summary_stock .stock_info_box .date {
   margin-top: 12px;
   font-family: "NanumSquare-L", "나눔고딕", "Dotum", "돋움", "Helvetica",
