@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <title>NAVER Corporation</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -336,7 +337,7 @@
                         </ul>
                     </li>
                     <li class='gnb_menu'>
-                        <span class='gnb_menu_tit'>채용</span>
+                        <span class='gnb_menu_tit gnb_arrow'>채용</span>
                     </li>
                 </ul>
             </nav>
@@ -977,14 +978,6 @@
                 </a>
             </li>
         </ul>
-        <script>
-            const mainContentBg = document.querySelectorAll('.main_content02_box_item');
-            let bgNum = 1;
-            for(let key of mainContentBg){
-                console.log(key)
-                key.style.background = `center/cover no-repeat url(/img/img_main_content${bgNum++}.png)`;
-            }
-        </script>
     </section>
 
     <section class="main_content support_content">

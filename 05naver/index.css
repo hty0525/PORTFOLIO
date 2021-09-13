@@ -100,11 +100,16 @@ button {
   background-color: rgba(255, 255, 255, 0.97);
   top: 0;
   z-index: 99999999;
+  transition: top 0.4s;
 }
 
 #header.active {
   background: #0fb93c;
   height: 80px;
+}
+
+#header.scroll_down {
+  top: -180px;
 }
 
 .header_wrap {
@@ -250,6 +255,24 @@ nav {
   background-color: #4bd16a;
 }
 
+.gnb_menu .gnb_arrow {
+  padding-right: 25px;
+}
+
+.gnb_menu:hover .gnb_menu_tit.gnb_arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 31px;
+  width: 18px;
+  height: 18px;
+  background: url(/img/sprite.png) no-repeat;
+  -webkit-background-size: 474px 1500px;
+  background-size: 474px 1500px;
+  background-position: -59px 0;
+}
+
 .gnb_menu .gnb_drop_menu_wrap > li:hover:before,
 .gnb_menu .gnb_drop_menu_wrap > li:hover + li:before,
 .gnb_menu .gnb_drop_menu_wrap > li:last-child:hover:after {
@@ -349,6 +372,7 @@ nav {
   background: black;
   display: block;
   transition: all 0.4s;
+  right: 0;
 }
 
 .header_all_menu .btn_all_menu .btn_line:nth-child(2) {
@@ -384,7 +408,7 @@ nav {
 }
 #header.active .header_all_menu .btn_all_menu .btn_line:nth-child(4) {
   bottom: 50%;
-  transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(45deg) translateY(50%);
 }
 
 #header.active .header_all_menu .btn_all_menu:hover .btn_line {
@@ -585,11 +609,11 @@ header.active + .all_menu_bg {
   width: 100%;
   position: relative;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .slide_wrap {
   display: flex;
-  overflow: hidden;
 }
 .slide_item {
   position: relative;
@@ -623,7 +647,6 @@ header.active + .all_menu_bg {
   height: 100%;
   background: #fff;
   transition: all 0.4s;
-  width: 40%;
 }
 
 .slide_ctr .prev_btn,
