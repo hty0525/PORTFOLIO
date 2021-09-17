@@ -2,41 +2,41 @@
 @font-face {
   font-family: "NanumBarunGothic";
   src: local(NanumBarunGothic);
-  src: url("/font/NanumBarunGothic.eot");
-  src: url("/font/NanumBarunGothic.woff") format("woff"),
-    url("/font/NanumBarunGothic.otf") format("opentype");
+  src: url("font/NanumBarunGothic.eot");
+  src: url("font/NanumBarunGothic.woff") format("woff"),
+    url("font/NanumBarunGothic.otf") format("opentype");
 }
 
 @font-face {
   font-family: "NanumSquare-L";
   src: local(NanumSquareOTFLight);
-  src: url("/font/NanumSquareOTFLight.eot");
-  src: url("/font/NanumSquareOTFLight.woff") format("woff"),
-    url("/font/NanumSquareOTFLight.otf") format("opentype");
+  src: url("font/NanumSquareOTFLight.eot");
+  src: url("font/NanumSquareOTFLight.woff") format("woff"),
+    url("font/NanumSquareOTFLight.otf") format("opentype");
 }
 
 @font-face {
   font-family: "NanumSquare";
   src: local(NanumSquareOTFRegular);
-  src: url("/font/NanumSquareOTFRegular.eot");
-  src: url("/font/NanumSquareOTFRegular.woff") format("woff"),
-    url("/font/NanumSquareOTFRegular.otf") format("opentype");
+  src: url("font/NanumSquareOTFRegular.eot");
+  src: url("font/NanumSquareOTFRegular.woff") format("woff"),
+    url("font/NanumSquareOTFRegular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "NanumSquare-B";
   src: local(NanumSquareOTFBold);
-  src: url("/font/NanumSquareOTFBold.eot");
-  src: url("/font/NanumSquareOTFBold.woff") format("woff"),
-    url("/font/NanumSquareOTFBold.otf") format("opentype");
+  src: url("font/NanumSquareOTFBold.eot");
+  src: url("font/NanumSquareOTFBold.woff") format("woff"),
+    url("font/NanumSquareOTFBold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "NanumSquare-EB";
   src: local(NanumSquareOTFExtraBold);
-  src: url("/font/NanumSquareOTFExtraBold.eot");
-  src: url("/font/NanumSquareOTFExtraBold.woff") format("woff"),
-    url("/font/NanumSquareOTFExtraBold.otf") format("opentype");
+  src: url("font/NanumSquareOTFExtraBold.eot");
+  src: url("font/NanumSquareOTFExtraBold.woff") format("woff"),
+    url("font/NanumSquareOTFExtraBold.otf") format("opentype");
 }
 
 body,
@@ -123,13 +123,13 @@ button {
   width: 87px;
   height: 17px;
   margin: 32px 0 0 30px;
-  background: url(/img/header_logo.png);
+  background: url(img/header_logo.png);
   -webkit-background-size: 87px 17px;
   background-size: 87px 17px;
 }
 
 #header.active .header_logo {
-  background: url(/img/header_logo_v2.png);
+  background: url(img/header_logo_v2.png);
 }
 
 /*네비*/
@@ -267,7 +267,7 @@ nav {
   top: 31px;
   width: 18px;
   height: 18px;
-  background: url(/img/sprite.png) no-repeat;
+  background: url(img/sprite.png) no-repeat;
   -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
   background-position: -59px 0;
@@ -582,7 +582,7 @@ nav {
   top: 4.5px;
   width: 18px;
   height: 18px;
-  background: url(/img/sprite.png) no-repeat;
+  background: url(img/sprite.png) no-repeat;
   -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
   background-position: -59px 0;
@@ -656,7 +656,7 @@ header.active + .all_menu_bg {
   bottom: 198px;
   width: 46px;
   height: 46px;
-  background: url(/img/sprite.png) no-repeat;
+  background: url(img/sprite.png) no-repeat;
   -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
   opacity: 0.8;
@@ -1111,7 +1111,7 @@ header.active + .all_menu_bg {
   top: 0;
   width: 23px;
   height: 23px;
-  background: url(/img/sprite.png) no-repeat;
+  background: url(img/sprite.png) no-repeat;
   -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
   background-position: -199px -129px;
@@ -1213,7 +1213,7 @@ header.active + .all_menu_bg {
   height: 100px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: url(/img/sprite.png) no-repeat;
+  background: url(img/sprite.png) no-repeat;
   -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
 }
@@ -1260,7 +1260,7 @@ footer {
   width: 63px;
   height: 13px;
   margin: 0 auto;
-  background: url(/img/footer_logo.png) no-repeat;
+  background: url(img/footer_logo.png) no-repeat;
   -webkit-background-size: 63px 13px;
   background-size: 63px 13px;
 }
@@ -1316,7 +1316,7 @@ footer {
   top: 0;
   width: 16px;
   height: 16px;
-  background: url(/img/sprite.png) no-repeat;
+  background: url(img/sprite.png) no-repeat;
   -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
   background-position: -222px -26px;

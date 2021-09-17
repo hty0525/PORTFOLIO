@@ -169,5 +169,5 @@ prevBtn.addEventListener('click', () => {
 const mainContentBg = document.querySelectorAll('.main_content02_box_item');
 let bgNum = 1;
 for (let key of mainContentBg) {
-    key.style.background = `center/cover no-repeat url(/img/img_main_content${bgNum++}.png)`;
+    key.style.background = `center/cover no-repeat url(img/img_main_content${bgNum++}.png)`;
 }
