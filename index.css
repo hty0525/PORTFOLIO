@@ -681,7 +681,8 @@ p.work_time {
     margin-bottom: 40px;
   }
   #position_box {
-    width: 80%;
+    width: 100%;
+    padding: 20px;
   }
 
   .work_box {
@@ -719,6 +720,9 @@ p.work_time {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9em;
   }
 
   #contact_title {
@@ -993,14 +997,14 @@ p.work_time {
 
   /* CONTACT */
   #contact_title {
-    font-size: 2.7em;
+    font-size: 2.4em;
     position: absolute;
     top: 60px;
   }
 
   .contact_text {
     margin: 10% auto;
-    font-size: 0.95em;
+    font-size: 0.8em;
   }
 
   .adress {
@@ -1014,5 +1018,9 @@ p.work_time {
     width: 100%;
     margin: 0 auto;
     text-align: left;
+  }
+
+  .end {
+    font-size: 0.4em;
   }
 }
