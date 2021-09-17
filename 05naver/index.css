@@ -614,6 +614,7 @@ header.active + .all_menu_bg {
 
 .slide_wrap {
   display: flex;
+  position: relative;
 }
 .slide_item {
   position: relative;
@@ -717,7 +718,7 @@ header.active + .all_menu_bg {
 }
 
 /*슬라이드 내부 아이템들*/
-.slide_item .slide_logo {
+.slide_text_wrap .slide_logo {
   position: absolute;
   right: 160px;
   width: 190px;
@@ -726,14 +727,38 @@ header.active + .all_menu_bg {
   background-size: 474px 1500px;
 }
 
-.slide_item .slide_text_box {
+.hide_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.hide_box.show {
+  display: block;
+  opacity: 1;
+}
+
+.slide_text_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide_text_wrap .slide_text_box {
   position: absolute;
   left: 160px;
   bottom: 157px;
   color: #fff;
 }
 
-.slide_item .slide_title {
+.slide_text_wrap .slide_title {
   margin-bottom: 32px;
   font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica",
     "Arial", "AppleSDGothicNeo", sans-serif;
@@ -741,40 +766,53 @@ header.active + .all_menu_bg {
   line-height: 46px;
 }
 
-.slide_item .slide_text {
+.slide_text_wrap .slide_text {
   font-size: 15px;
   line-height: 1.6;
 }
 
-.main_slide .slide_logo.gak {
+.slide_text_wrap .slide_text span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 48px;
+}
+
+.slide_text_wrap .slide_logo.naver {
+  bottom: 75px;
+  width: 136px;
+  height: 25px;
+  background-position: -202px -1064px;
+}
+
+.slide_text_wrap .slide_logo.gak {
   bottom: 76px;
   width: 228px;
   height: 38px;
   background-position: -208px -1239px;
 }
 
-.main_slide .slide_logo.clova {
+.slide_text_wrap .slide_logo.clova {
   bottom: 78px;
   width: 239px;
   height: 33px;
   background-position: -209px -1282px;
 }
 
-.main_slide .slide_logo.clova_dubbing {
+.slide_text_wrap .slide_logo.clova_dubbing {
   bottom: 78px;
   width: 251px;
   height: 32px;
   background-position: 0 -1318px;
 }
 
-.main_slide .slide_logo.labs {
+.slide_text_wrap .slide_logo.labs {
   bottom: 70px;
   width: 194px;
   height: 20px;
   background-position: 0px -1240px;
 }
 
-.main_slide .slide_logo.spacegreen {
+.slide_text_wrap .slide_logo.spacegreen {
   bottom: 70px;
   width: 134px;
   height: 50px;
