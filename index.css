@@ -48,6 +48,10 @@ section {
   font-family: "Lexend Peta", sans-serif;
 }
 
+.max_width {
+  max-width: 1200px;
+}
+
 /* nav */
 nav#nav_bar {
   width: 100%;
@@ -225,7 +229,7 @@ nav#nav_bar {
 }
 
 .skill_box {
-  width: 90%;
+  width: 100%;
   float: left;
 }
 
@@ -312,6 +316,9 @@ nav#nav_bar {
   margin: 40px 2.5%;
   overflow: hidden;
   float: left;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 3%;
+  box-shadow: 2px 6px 18px rgb(0 0 0 / 50%);
 }
 
 .work_background {

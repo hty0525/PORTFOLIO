@@ -84,10 +84,8 @@ pagerBar.style.width = `${(100 / (slideLength - 2)) * slideCurNum}%`;
 const slideNext = () => {
     removeClass();
     slideCurNum++;
-    console.log(slideCurNum)
     if (slideCurNum == slideLength - 1) {
         addClass(0);
-        console.log(123123)
         slideWrap.style.transition = `0ms`;
         slideWrap.style.transform = `translateX(0)`;
         setTimeout(() => {

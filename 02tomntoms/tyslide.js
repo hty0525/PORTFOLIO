@@ -1,12 +1,12 @@
 const slideBox = document.querySelector('.slide_box');
 const slideWrap = document.querySelector('.slide_wrap');
 
-//자동으로 슬라이드 움직일건지 그리고 그 속도
 
 
 const slideLen = slideWrap.childElementCount;
 const slideItem = document.querySelectorAll('.slide_item');
 
+//자동으로 슬라이드 움직일건지 그리고 그 속도
 let slideDelay = 3000;
 let slideTran = 1000;
 for(key of slideItem){

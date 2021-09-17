@@ -6,7 +6,7 @@
 const workBox =document.querySelectorAll('.work_background');
 let workBoxNum = 1;
 for(let key of workBox){
-  key.style.background=`center / cover no-repeat url(./img/work${workBoxNum}.png)`;
+  key.style.background=`center/contain no-repeat url(./img/work${workBoxNum}.png)`;
   workBoxNum++;
 }
 
