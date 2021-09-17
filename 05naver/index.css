@@ -624,6 +624,9 @@ header.active + .all_menu_bg {
   vertical-align: bottom;
   width: 100%;
 }
+.slide_item video {
+  width: 100%;
+}
 
 /*슬라이드 컨트롤박스*/
 .slide_ctr {
