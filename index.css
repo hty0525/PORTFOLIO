@@ -316,7 +316,7 @@ nav#nav_bar {
   margin: 40px 2.5%;
   overflow: hidden;
   float: left;
-  background: rgba(255, 255, 255, 0.4);
+  background: #fff;
   padding: 3%;
   box-shadow: 2px 6px 18px rgb(0 0 0 / 50%);
 }
@@ -333,6 +333,8 @@ nav#nav_bar {
 
 .work_background {
   padding-top: 50%;
+  transition: opacity 0.4s;
+  opacity: 1;
 }
 
 .img_box {
@@ -388,26 +390,56 @@ p.work_time {
 .work_text div {
   display: inline-block;
   color: #000;
-  border-radius: 111111px;
-  overflow: hidden;
   font-size: 0.7em;
   letter-spacing: 0em;
 }
-.work_text div span {
+.work_text div > span {
   display: block;
   width: 100%;
   border-radius: 999px;
-  padding: 5px 15px;
+  position: relative;
 }
 
 .work_text div span > span {
-  background: powderblue;
-  width: 10%;
+  background: var(--color-blue);
+  border-radius: 999px;
+  width: 20%;
   transition: all 0.4s;
   margin-top: 3px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -60%;
+  margin-left: 10px;
+  transform: translateY(-50%);
 }
-.work_box:hover div span {
-  width: 100%;
+
+.work_text div span > span::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  width: 5px;
+  height: 25px;
+  background: var(--color-blue);
+  bottom: -3px;
+  left: 7px;
+  transform: rotate(45deg);
+}
+
+.work_text div span > span::before {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  width: 5px;
+  height: 25px;
+  background: var(--color-blue);
+  top: -3px;
+  left: 7px;
+  transform: rotate(135deg);
+}
+.work_box:hover div span > span {
+  width: 50%;
 }
 
 /* CONTACT */
