@@ -622,6 +622,7 @@ header.active + .all_menu_bg {
 
 .slide_item img {
   vertical-align: bottom;
+  width: 100%;
 }
 
 /*슬라이드 컨트롤박스*/
