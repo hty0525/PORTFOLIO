@@ -342,7 +342,6 @@ nav#nav_bar {
   position: absolute;
   top: 18%;
   left: 10%;
-  font-family: "S-CoreDream-8Heavy", sans-serif;
   opacity: 0;
 }
 
@@ -361,8 +360,15 @@ nav#nav_bar {
 .work_text p {
   font-size: 0.8em;
   color: #000;
-  margin-bottom: 10px;
   letter-spacing: 0.05em;
+}
+
+.work_text h5 {
+  margin-bottom: 20px;
+}
+
+.work_text p:last-of-type {
+  margin-bottom: 25px;
 }
 
 p.work_time {
