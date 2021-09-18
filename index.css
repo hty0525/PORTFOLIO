@@ -554,6 +554,25 @@ p.work_time {
     position: relative;
   }
 
+  .work_text h5 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .work_text div span > span:after {
+    display: none;
+  }
+  .work_text div span > span:before {
+    display: none;
+  }
+
+  .work_text div span > span {
+    position: static;
+    width: 100%;
+    margin: 0;
+    margin-top: 7px;
+  }
+
   .work_box {
     font-size: 0.7em;
   }
