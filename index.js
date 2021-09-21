@@ -4,7 +4,7 @@
 
 
 const workBox =document.querySelectorAll('.work_background');
-let workBoxNum = 1;
+let workBoxNum = 0;
 for(let key of workBox){
   key.style.background=`center/contain no-repeat url(./img/work${workBoxNum}.png)`;
   workBoxNum++;
@@ -40,7 +40,11 @@ navBtn.addEventListener('click', (event) => {
   const link = target.dataset.link;
   const scrollTo = document.querySelector(link);
   event.target.classList.remove('active');
-  scrollTo.scrollIntoView({behavior: "smooth"});
+  window.scrollTo({
+    behavior: "smooth",
+    top:window.pageYOffset + scrollTo.getBoundingClientRect().top
+  });
+  //scrollTo.scrollIntoView({behavior: "smooth"});
 });
 
 
@@ -59,7 +63,6 @@ function navScroll(name,num){
 
       if( domTop-200<wt && wt<domTop+thisH-200){
         navTop.classList.add('active');
-
       }else{
         navTop.classList.remove('active');
       }
