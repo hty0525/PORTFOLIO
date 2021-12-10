@@ -1,0 +1,853 @@
+$font-XXS: 12px;
+$font-XS: 16px;
+$font-S: 20px;
+$font-M: 24px;
+$font-L: 28px;
+$font-XL: 32px;
+$font-XXL: 36px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+@mixin Font($weight) {
+  font-weight: $weight;
+  font-family: "Lexend Peta", sans-serif;
+}
+
+body {
+  font-family: "S-CoreDream-5", sans-serif;
+}
+
+/*로딩*/
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+}
+
+.loading .circle {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 7px solid powderblue;
+  border-radius: 50px;
+  border-right: 7px solid white;
+  animation: loading 1.5s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*네브바*/
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  .logo {
+    a {
+      display: block;
+      width: 100%;
+      padding: 0 20px;
+      color: #000;
+      @include Font(600);
+      font-size: $font-XL;
+    }
+  }
+  .navMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 700px;
+    margin-right: 50px;
+    align-items: center;
+    li {
+      font-size: $font-S;
+      padding: 10px 20px;
+      cursor: pointer;
+      position: relative;
+      a {
+        display: block;
+        width: 100%;
+      }
+      span {
+        @include Font(400);
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 105%;
+          left: 50%;
+          transform: translateX(-50%);
+          display: block;
+          width: 0%;
+          height: 2px;
+          border-radius: 555px;
+          background: #444;
+        }
+      }
+      &.active {
+        span {
+          &:after {
+            width: 120%;
+          }
+        }
+      }
+      &:hover {
+        @extend .active;
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  @include Font(600);
+  font-size: 50px;
+}
+
+/*홈 시작*/
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url("./img/home_background.png") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .homeWrap {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 25%;
+    }
+    h1 {
+      font-family: "Recipekorea";
+      font-size: $font-L;
+      margin-top: 30px;
+      width: 100%;
+      text-align: center;
+      color: #444;
+      span {
+        color: #000;
+        font-weight: bold;
+        font-size: $font-XXL;
+      }
+    }
+  }
+}
+
+/*어바웃 시작*/
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutWrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    overflow: hidden;
+    .title {
+      margin: 30px auto;
+      text-align: left;
+      padding-bottom: 60px;
+    }
+
+    .aboutLeft {
+      width: 44%;
+      margin-right: 6%;
+      float: left;
+      .aboutText {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 10px;
+        border-top: 1px solid #000;
+        & > p {
+          width: 40%;
+          color: #003458;
+          font-weight: bold;
+          font-size: 1.1em;
+          font-size: $font-S;
+        }
+        & > ul {
+          width: 60%;
+          font-size: $font-XS;
+          line-height: 1.7em;
+        }
+      }
+    }
+    .aboutRight {
+      width: 48%;
+      margin-left: 2%;
+      float: left;
+      .aboutMe {
+        margin-bottom: 70px;
+        p {
+          font-size: $font-M;
+          margin-bottom: 25px;
+          span {
+            font-weight: bold;
+            display: block;
+            font-size: $font-L;
+          }
+        }
+        ul {
+          li {
+            font-size: $font-S;
+            line-height: 1.8em;
+          }
+        }
+      }
+      .aboutSkill {
+        p {
+          @include Font(600);
+          font-size: $font-L;
+          margin-bottom: 20px;
+        }
+        .aboutSkillImg {
+          overflow: hidden;
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*work시작*/
+#work {
+  padding: 100px 0;
+  background: #f6f7f9;
+  .workWrap {
+    width: 80%;
+    margin: 0 auto;
+    .title {
+      text-align: center;
+      margin: 50px auto;
+      margin-top: 20px;
+      span {
+        color: #666;
+        display: block;
+        font-size: $font-XL;
+      }
+    }
+
+    .workList {
+      width: 100%;
+      overflow: hidden;
+      .workItem {
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        box-shadow: 2px 6px 18px rgb(0 0 0 / 50%);
+        position: relative;
+        width: 45%;
+        margin: 50px 2.5%;
+        float: left;
+        cursor: pointer;
+        & * {
+          transition: opacity 0.4s;
+        }
+        .workItemBg {
+          padding-top: 50%;
+          &.work1 {
+            background: url("./img/work1.png") center center no-repeat;
+            background-size: 70%;
+          }
+          &.work2 {
+            background: url("./img/work2.png") center center no-repeat;
+            background-size: 70%;
+          }
+          &.work3 {
+            background: url("./img/work3.png") center center no-repeat;
+            background-size: 70%;
+          }
+          &.work4 {
+            background: url("./img/work4.png") center center no-repeat;
+            background-size: 70%;
+          }
+          &.work5 {
+            background: url("./img/work5.png") center center no-repeat;
+            background-size: 70%;
+          }
+        }
+        .workText {
+          position: absolute;
+          top: 15%;
+          left: 10%;
+          opacity: 0;
+          & > * {
+            margin-bottom: 15px;
+            &:last-child {
+              a {
+                margin-right: 10px;
+                color: #666;
+                position: relative;
+                &:hover {
+                  color: #000;
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 2px;
+                    background: #000;
+                  }
+                }
+              }
+            }
+          }
+          .workTit {
+            h1 {
+              font-size: $font-S;
+              span {
+                color: #666;
+              }
+            }
+          }
+          .workSkill {
+            h3 {
+              font-size: $font-XS;
+              margin-bottom: 5px;
+            }
+            p {
+              @include Font(400);
+              color: #000;
+              letter-spacing: -2px;
+              span {
+                display: block;
+                font-weight: bold;
+                font-size: $font-L;
+              }
+            }
+          }
+          .workInfo {
+            h3 {
+              font-size: $font-XS;
+              margin-bottom: 3px;
+            }
+            p {
+              line-height: 1.7em;
+              span {
+                display: block;
+              }
+            }
+          }
+          &:last-child {
+            margin-bottom: 10px;
+          }
+        }
+
+        &:hover {
+          .workItemBg {
+            opacity: 0.1;
+          }
+          .workText {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*CONTACT 시작*/
+#contact {
+  padding: 100px 0;
+  height: 100vh;
+  overflow: hidden;
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contactWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contactText {
+      p {
+        text-align: center;
+        font-size: $font-XXL;
+      }
+      h1 {
+        text-align: center;
+        font-weight: normal;
+        font-size: $font-L;
+        span {
+          display: block;
+          font-weight: bold;
+          font-size: 60px;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 5px;
+    span {
+      @include Font(600);
+    }
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+반응형시작
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+@media (max-width: 1600px) {
+  #about {
+    .aboutWrap {
+      .aboutLeft {
+        .title {
+          margin: 0;
+        }
+        .aboutText {
+          padding: 50px 0;
+        }
+      }
+
+      .aboutRight {
+        .aboutSkill {
+          .aboutSkillImg {
+            img {
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #work {
+    .workWrap {
+      .workList {
+        .workItem {
+          .workItemBg {
+            padding-top: 60%;
+          }
+          .workText {
+            font-size: 0.9em;
+            .workTit {
+              h1 {
+                font-size: $font-S;
+                span {
+                  color: #666;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .nav {
+    .logo {
+      a {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        color: #000;
+        @include Font(600);
+        font-size: $font-XL;
+      }
+    }
+    .navMenu {
+      width: 50%;
+    }
+  }
+
+  #home {
+    .homeWrap {
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 50%;
+      }
+      h1 {
+        font-family: "Recipekorea";
+        font-size: $font-XL;
+        margin-top: 60px;
+        width: 100%;
+        text-align: center;
+        color: #444;
+        span {
+          color: #000;
+          font-weight: bold;
+          font-size: $font-XXL;
+        }
+      }
+    }
+  }
+
+  #about {
+    .aboutWrap {
+      width: 90%;
+      .title {
+        font-size: $font-XXL;
+      }
+      .aboutLeft {
+        margin-right: 4%;
+        .aboutText {
+          & > p {
+            font-size: $font-S;
+          }
+          & > ul {
+            width: 70%;
+          }
+        }
+      }
+      .aboutRight {
+        width: 52%;
+        margin-left: 0;
+        float: left;
+        .aboutMe {
+          margin-bottom: 70px;
+          p {
+            font-size: $font-M;
+            margin-bottom: 25px;
+            span {
+              font-weight: bold;
+              display: block;
+              font-size: $font-L;
+            }
+          }
+          ul {
+            li {
+              font-size: $font-S;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #work {
+    padding: 70px 0;
+    .workWrap {
+      width: 90%;
+      margin: 0 auto;
+      .title {
+        margin: 20px auto;
+        margin-top: 20px;
+        span {
+        }
+      }
+
+      .workList {
+        width: 100%;
+        overflow: hidden;
+        .workItem {
+          align-items: center;
+          margin-bottom: 40px;
+          position: relative;
+          width: 95%;
+          margin: 30px 2.5%;
+          cursor: pointer;
+          & * {
+            transition: opacity 0.4s;
+          }
+          .workItemBg {
+            padding-top: 50%;
+            &.work1 {
+              background-size: 60%;
+            }
+            &.work2 {
+              background-size: 60%;
+            }
+            &.work3 {
+              background-size: 60%;
+            }
+            &.work4 {
+              background-size: 60%;
+            }
+            &.work5 {
+              background-size: 60%;
+            }
+          }
+          .workText {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            .workTit {
+              h1 {
+                font-size: $font-S;
+                span {
+                  color: #666;
+                }
+              }
+            }
+            .workInfo {
+              h3 {
+                font-size: $font-XS;
+                margin-bottom: 3px;
+              }
+              p {
+                line-height: 1.7em;
+                span {
+                  display: block;
+                }
+              }
+            }
+            &:last-child {
+              margin-bottom: 10px;
+            }
+          }
+
+          &:hover {
+            .workItemBg {
+              opacity: 1;
+            }
+            .workText {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    .logo {
+      a {
+      }
+    }
+    .navMenu {
+      width: 70%;
+      margin-right: 5px;
+    }
+  }
+
+  #home {
+    .homeWrap {
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 50%;
+      }
+      h1 {
+        font-family: "Recipekorea";
+        font-size: $font-XL;
+        margin-top: 60px;
+        width: 100%;
+        text-align: center;
+        color: #444;
+        span {
+          color: #000;
+          font-weight: bold;
+          font-size: $font-XXL;
+        }
+      }
+    }
+  }
+
+  #about {
+    .aboutWrap {
+      width: 80%;
+      .title {
+        font-size: $font-XXL;
+      }
+      .aboutLeft {
+        width: 100%;
+        .aboutText {
+          & > p {
+            font-size: $font-S;
+          }
+          & > ul {
+            width: 70%;
+          }
+        }
+      }
+      .aboutRight {
+        width: 100%;
+        margin-top: 50px;
+        clear: both;
+        .aboutMe {
+          p {
+            span {
+            }
+          }
+          ul {
+            li {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #work {
+    .workWrap {
+      width: 90%;
+      margin: 0 auto;
+      .title {
+        margin: 20px auto;
+        margin-top: 20px;
+      }
+
+      .workList {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+  #contact {
+    .contactWrap {
+      .contactText {
+        p {
+          font-size: $font-XL;
+        }
+        h1 {
+          font-size: $font-XL;
+          span {
+            font-size: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    .logo {
+      a {
+        font-size: $font-S;
+      }
+    }
+    .navMenu {
+      width: 80%;
+      margin: 0;
+      li {
+        span {
+          font-size: $font-XS;
+        }
+      }
+    }
+  }
+
+  #about {
+    .aboutWrap {
+      width: 90%;
+    }
+  }
+
+  #work {
+    .workWrap {
+      width: 90%;
+      margin: 0 auto;
+      .title {
+        margin: 20px auto;
+        margin-top: 20px;
+      }
+
+      .workList {
+        width: 100%;
+        overflow: hidden;
+        .workItem {
+          .workText {
+            transform: translate(0);
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    .contactWrap {
+      .title {
+        font-size: $font-XL;
+      }
+      .contactText {
+        p {
+          font-size: $font-M;
+        }
+        h1 {
+          font-size: $font-M;
+          span {
+            font-size: $font-XL;
+          }
+        }
+      }
+    }
+  }
+}
