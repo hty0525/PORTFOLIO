@@ -1,6 +1,0 @@
-#test 파일들
-*.test
-*.scss
-*.css.map
-#예전파일들전부
-origin
