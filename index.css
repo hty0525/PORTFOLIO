@@ -70,6 +70,11 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 999;
+  transition: all 0.4s;
+}
+.nav.on {
+  padding: 5px;
+  background: #fff;
 }
 .nav .logo a {
   display: block;
@@ -84,7 +89,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
   max-width: 700px;
   margin-right: 50px;
   align-items: center;
