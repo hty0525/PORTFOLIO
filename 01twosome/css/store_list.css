@@ -1,0 +1,253 @@
+header#page_background {
+  background: url(../img/store/store_product_background.jpg) no-repeat;
+  background-size: 100%;
+}
+
+header#page_background > nav.store_nav > ul > li > a[href="store_list.html"] {
+  border-bottom: 3px solid black;
+  color: #000;
+  font-weight: bold;
+}
+header#page_background::after {
+  content: "PRODUCT";
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.05em;
+  font-size: 4em;
+  font-weight: bold;
+}
+section.store_list_main {
+  padding: 10%;
+}
+
+section.wrap_menu {
+  width: 100%;
+}
+section.wrap_menu article.wrap_small {
+  width: 70%;
+  margin: 0 auto;
+}
+section.wrap_menu div.menu_list {
+  width: 60%;
+  margin: 5% auto;
+  overflow: hidden;
+  text-align: center;
+}
+section.wrap_menu div.menu_list label {
+  font-size: 1.3em;
+  display: block;
+  width: 33.333%;
+  float: left;
+  cursor: pointer;
+  padding: 1% 0;
+  border: 1px solid black;
+  color: #666;
+  border-right: none;
+}
+section.wrap_menu div.menu_list label:last-child {
+  border-right: 1px solid black;
+}
+
+article.wrap_small > div.all_list {
+  display: none;
+}
+article.wrap_small > div.all_list > h1 {
+  width: 100%;
+  text-align: center;
+  margin: 3% auto;
+  font-size: 2.5em;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+article.wrap_small > div.all_list > h1 > span {
+  background: white;
+  padding: 0 3%;
+}
+article.wrap_small > div.all_list > h1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: black;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-);
+}
+
+article.wrap_small ul.list_box {
+  width: 100%;
+  overflow: hidden;
+  padding: 2px;
+}
+
+article.wrap_small ul.list_box > li {
+  width: 23%;
+  float: left;
+  margin-right: 2.666%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 1.4em;
+  box-shadow: 2px 2px 2px 2px #999;
+}
+article.wrap_small ul.list_box > li > a > img {
+  width: 100%;
+}
+article.wrap_small ul.list_box > li > a {
+  display: block;
+  width: 100%;
+  padding: 7%;
+}
+article.wrap_small ul.list_box > li:nth-child(4n) {
+  margin: 0;
+}
+article.wrap_small ul.list_box > li > div.menu_hide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15% 0;
+}
+
+ul.list_box > li > div.menu_hide > p {
+  color: black;
+  font-size: 1.05em;
+}
+ul.list_box > li > div.menu_hide > p:nth-child(1) {
+  color: #000;
+}
+ul.list_box > li > div.menu_hide > p:nth-child(2) {
+}
+ul.list_box > li > div.menu_hide > p:nth-child(5) {
+  font-size: 0.9em;
+  color: #444;
+}
+
+ul.list_box > li > div.menu_hide > i {
+  width: 30%;
+  border: 1px solid #999;
+  height: 1px;
+  display: block;
+  margin: 6% auto;
+}
+
+ul.list_box > li > a > p.menu_name {
+  color: #d57b84;
+}
+ul.list_box > li > div.menu_hide > p.menu_name {
+  color: #d57b84;
+}
+
+ul.list_box > li > div.menu_hide > div.number {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
+}
+ul.list_box > li > div.menu_hide > div.number > div {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 4% 0;
+  font-weight: 500;
+}
+
+ul.list_box > li > div.menu_hide > a[href="store_product.html"] {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  color: black;
+  background-color: #ffd4d4;
+  border-radius: 10px;
+  line-height: 2em;
+  font-size: 0.9em;
+  margin-top: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 30%;
+}
+ul.list_box > li > div.menu_hide > a[href="store_product.html"]:hover {
+  background: #ffa2a2;
+  font-weight: bold;
+}
+ul.list_box > li > div.menu_hide > div.number > div:nth-child(1) {
+  margin-left: 12.5%;
+}
+ul.list_box > li > div.menu_hide > div.number > div:nth-child(2) {
+  font-size: 1em;
+}
+ul.list_box > li > div.menu_hide > div.number > div:nth-child(3) {
+  margin-right: 12.5%;
+}
+
+ul.list_box > li > div.menu_hide > div.number > div.ml::after {
+  content: "";
+  display: block;
+}
+ul.list_box > li > div.menu_hide > div.number > div.price::before {
+  content: "￦ ";
+  display: inline-block;
+}
+ul.list_box > li > div.menu_hide > div.number > div.kcal::after {
+  content: "";
+  display: block;
+}
+article.wrap_small > div.menu_list > label:hover {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+ul.list_box > li > a > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+article.wrap_small ul.list_box > li:hover > div.menu_hide {
+  display: block;
+}
+
+article.wrap_small
+  > input#coffee:checked
+  ~ div.menu_list
+  > label[for="coffee"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+article.wrap_small > input#md:checked ~ div.menu_list > label[for="md"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+article.wrap_small > input#gift:checked ~ div.menu_list > label[for="gift"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+input {
+  display: none;
+}
+article.wrap_small > input#coffee:checked ~ div#coffee {
+  display: block;
+}
+article.wrap_small > input#md:checked ~ div#md {
+  display: block;
+}
+article.wrap_small > input#gift:checked ~ div#gift {
+  display: block;
+}
+#exit {
+  display: none;
+}
+/*
+a#exit::after{content:""; position:absolute; width:25px; height:2px; background:#666; top:50%; right:0; transform:rotate(45deg);}
+
+a#exit::before{content:""; position:absolute; width:25px; height:2px; background:#666; top:50%; right:0; transform:rotate(-45deg);}*/

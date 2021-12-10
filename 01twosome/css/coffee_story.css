@@ -1,0 +1,133 @@
+section.coffee_story_wrap {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.4em;
+}
+section.coffee_story_wrap div.main {
+  width: 100%;
+  padding: 23% 0;
+  background: url(../img/story/coffee_story_main.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+section.coffee_story_wrap div.main div:nth-child(1) {
+  width: 30%;
+  position: absolute;
+  right: 18%;
+  top: 32%;
+  font-size: 1em;
+  text-align: center;
+}
+section.coffee_story_wrap div.main div:nth-child(1) img {
+  width: 50%;
+}
+/*section.coffee_story_wrap div.main p:nth-child(2){width:25%; position:absolute; bottom:43%; right:20%;  font-size:0.85em; color:#999;}*/
+section.coffee_story_wrap div.blend div p {
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+section.coffee_story_wrap div.main > div span:nth-child(3) {
+  font-size: 4em;
+}
+section.coffee_story_wrap div.main > div > p {
+  font-size: 0.95em;
+  color: #999;
+  text-align: left;
+  padding-left: 10%;
+}
+div p:nth-child(1) {
+  color: white;
+}
+div p:nth-child(n + 2) {
+  color: rgba(255, 255, 255, 0.85);
+}
+section.coffee_story_wrap div.blend > p {
+  margin-bottom: 3%;
+}
+section.coffee_story_wrap div.blend {
+  background: url(../img/index/story/coffee_story.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 0 0;
+  padding-top: 4%;
+  padding-bottom: 9%;
+  font-size: 0.85em;
+}
+section.coffee_story_wrap div.blend > div {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-top: 2px solid #666;
+  border-bottom: 2px solid #666;
+  padding: 3% 0;
+}
+
+section.coffee_story_wrap div.blend > p.head {
+  font-size: 2.3em;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+section.coffee_story_wrap div.blend div div {
+  width: 50%;
+  float: left;
+  padding: 2% 0;
+  text-align: center;
+}
+section.coffee_story_wrap div.blend div div p img {
+  vertical-align: middle;
+  width: 1em;
+}
+
+section.coffee_story_wrap div.blend div div:nth-child(1) {
+}
+section.coffee_story_wrap div.blend div div:nth-child(2) {
+  border-left: 1px solid #666;
+}
+div p:nth-child(1) {
+  font-size: 2em;
+  text-align: center;
+}
+
+div ul {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+div ul li {
+  float: left;
+  width: 40%;
+}
+div ul li:nth-child(1) {
+  text-align: left;
+  margin: 0 5%;
+}
+div ul li:nth-child(1) span {
+  text-align: left;
+}
+div ul li:nth-child(2) {
+  text-align: right;
+}
+div ul li:nth-child(1) {
+  text-align: left;
+}
+
+section.coffee_story_wrap div.sig {
+  background: url(../img/story/coffee_story_2.jpg) no-repeat center center;
+  background-size: 100%;
+  padding: 0 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 0.85em;
+}
+
+section.coffee_story_wrap div.sig div div:nth-child(1) {
+  border-right: none;
+}
+section.coffee_story_wrap div.sig div div:nth-child(2) {
+  border-left: 1px solid #666;
+}

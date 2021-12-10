@@ -1,0 +1,154 @@
+header#page_background {
+  background: url(../img/menu/menu_info_background.jpg) no-repeat center 50%;
+  background-size: 100%;
+  border-bottom: 1px solid #f9f9f9;
+}
+header#page_background::after {
+  content: "Nutrition Facts";
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.05em;
+  font-size: 4em;
+  font-weight: bold;
+}
+header#page_background > nav.menu_nav {
+  width: 100%;
+  overflow: hidden;
+}
+header#page_background > nav.menu_nav > ul {
+  width: 40%;
+  margin: auto;
+}
+header#page_background > nav.menu_nav > ul > li {
+  width: 20%;
+  float: left;
+}
+header#page_background > nav.menu_nav > ul > li > a {
+  color: #333;
+  float: left;
+}
+header#page_background > nav.menu_nav > ul > li > a[href="menu_info.html"] {
+  border-bottom: 3px solid black;
+}
+
+section.wrap_menu {
+  width: 100%;
+}
+section.wrap_menu article.wrap_small {
+  width: 70%;
+  margin: 0 auto;
+}
+section.wrap_menu div.menu_list {
+  width: 70%;
+  margin: 5% auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+section.wrap_menu div.menu_list label {
+  font-size: 1.3em;
+  display: block;
+  width: 25%;
+  float: left;
+  cursor: pointer;
+  padding: 1% 0;
+  border: 1px solid black;
+  color: #666;
+  border-right: none;
+}
+section.wrap_menu div.menu_list label:last-child {
+  border-right: 1px solid black;
+}
+
+section.wrap_menu > article.wrap_small > div.table_box {
+  width: 80%;
+  margin: 0 auto;
+}
+section.wrap_menu > article.wrap_small > div.table_box > table.table {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  margin-top: 5%;
+  table-layout: fixed; /*word-break:break-all;*/
+}
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+}
+section.wrap_menu > article.wrap_small > div.table_box > table.table > thead {
+  border-top: 1px solid black;
+}
+section.wrap_menu > article.wrap_small > div.table_box > table.table tr {
+  border-bottom: 1px solid #666;
+  font-size: 1.2em;
+}
+section.wrap_menu
+  > article.wrap_small
+  > div.table_box
+  > table.table
+  tr
+  > *:nth-child(1) {
+  width: 350px;
+  padding: 1% 0;
+  background: #fafafa;
+  color: #222;
+}
+section.wrap_menu
+  > article.wrap_small
+  > div.table_box
+  > table.table
+  tr
+  > *:nth-child(n + 2) {
+  padding: 1% 0;
+  width: 10%;
+  text-align: center;
+}
+
+input {
+  display: none;
+}
+section.wrap_menu div.menu_list label:hover {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+input#dessert:checked ~ div.menu_list > label[for="dessert"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+input#cake:checked ~ div.menu_list > label[for="cake"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+input#coffee:checked ~ div.menu_list > label[for="coffee"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+input#deli:checked ~ div.menu_list > label[for="deli"] {
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+article.wrap_small
+  > input#dessert:checked
+  ~ div.table_box
+  > table.table_dessert {
+  display: block;
+}
+article.wrap_small > input#cake:checked ~ div.table_box > table.table_cake {
+  display: block;
+}
+article.wrap_small > input#coffee:checked ~ div.table_box > table.table_coffee {
+  display: block;
+}
+article.wrap_small > input#deli:checked ~ div.table_box > table.table_deli {
+  display: block;
+}

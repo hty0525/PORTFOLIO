@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+#slideBox {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#slideWrap {
+  overflow: hidden;
+  position: relative;
+}
+img {
+  width: 100%;
+}
+
+.slideItem {
+  float: left;
+}
+
+.slidePager {
+  position: absolute;
+  bottom: 50px;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slidePager > li {
+  width: 100px;
+  height: 7px;
+  float: left;
+  margin: 0 5px;
+  background: rgba(255, 192, 203);
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 555555555px;
+}
+
+.slidePager > li:hover {
+  opacity: 1;
+}
+
+.slidePager > li.on {
+  opacity: 1;
+}
+
+/*슬라이드 이전 다음 버튼*/
+
+.slideBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+}
+
+.nextBtn {
+  right: 50px;
+}
+
+.prevBtn {
+  left: 50px;
+}
