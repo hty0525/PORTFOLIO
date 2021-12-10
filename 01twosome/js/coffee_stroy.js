@@ -1,5 +1,0 @@
-$(document).reday(function(){
-
-
-
-})
