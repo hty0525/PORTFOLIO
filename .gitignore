@@ -1,1 +1,4 @@
+#test 파일들
 *.test
+*.scss
+*.css.map
