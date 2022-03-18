@@ -19,6 +19,22 @@ body {
   font-family: "S-CoreDream-5", sans-serif;
 }
 
+/* 스크롤바 커스텀 */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f6f7f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #73aace;
+}
+
 /*로딩*/
 .loading {
   position: fixed;
@@ -73,7 +89,7 @@ body {
   transition: all 0.4s;
 }
 .nav.on {
-  padding: 5px;
+  padding: 15px;
   background: #fff;
 }
 .nav .logo a {
@@ -111,7 +127,7 @@ body {
 .nav .navMenu li span:after {
   content: "";
   position: absolute;
-  top: 105%;
+  top: 110%;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -119,6 +135,7 @@ body {
   height: 2px;
   border-radius: 555px;
   background: #444;
+  transition: all 0.7s;
 }
 .nav .navMenu li.active span:after, .nav .navMenu li:hover span:after {
   width: 120%;
